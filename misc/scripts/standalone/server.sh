@@ -1,7 +1,8 @@
 #!/bin/sh
 
 JAVA_OPTS="-Xmx128M -Xms128M -Xmn8M"
- 
+
+export SRTM_PATH=/srtm
 export SEGMENTSPATH=/segments4
 export PROFILESPATH=/profiles2
 export CUSTOMPROFILESPATH=/customprofiles
