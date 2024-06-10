@@ -30,7 +30,6 @@ ${JAVA} \
   ${PROFILESPATH}/softaccess.brf \
   ${OSM_PBF_FILE}
 
-if [ -n "${SRTM_PATH}" ]; then
 ${JAVA} \
   -cp /brouter.jar \
   -Ddeletetmpfiles=true \
@@ -41,7 +40,6 @@ ${JAVA} \
   tmp/bordernids.dat \
   tmp/bordernodes.dat \
   ${SRTM_PATH}
-fi
 
 ${JAVA} \
   -cp /brouter.jar \
