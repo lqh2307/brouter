@@ -13,9 +13,15 @@ COPY --from=build /tmp/brouter/misc/scripts/standalone/* /bin
 COPY --from=build /tmp/brouter/misc/profiles2 /profiles2
 
 RUN chmod -R +x /bin
-RUN mkdir /customprofiles /segments4
+RUN mkdir /customprofiles /segments4 /srtm
+
+WORKDIR /data
 
 VOLUME /data
+VOLUME /segments4
+VOLUME /customprofiles
+VOLUME /profiles2
+VOLUME /srtm
 
 EXPOSE 17777
 
