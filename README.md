@@ -42,7 +42,7 @@ A full documentation on how to set this up is available at
 [`docs/users/osmand.md`](docs/users/osmand.md).
 
 
-## BRouter on Windows/Linux/Mac OS
+## BRouter on Linux/Mac OS
 
 ### Build and Install
 
@@ -130,8 +130,6 @@ Helpers scripts are provided in `misc/scripts/standalone` to quickly spawn a
 BRouter HTTP server for various platforms.
 
 * Linux/Mac OS: `./misc/scripts/standalone/server.sh`
-* Windows (using Bash): `./misc/scripts/standalone/server.sh`
-* Windows (using CMD): `misc\scripts\standalone\server.cmd`
 
 The API endpoints exposed by this HTTP server are documented in the
 [`brouter-server/src/main/java/btools/server/request/ServerHandler.java`](brouter-server/src/main/java/btools/server/request/ServerHandler.java)
