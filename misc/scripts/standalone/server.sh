@@ -1,6 +1,6 @@
 #!/bin/sh
 
-JAVA_OPTS="-Xmx128M -Xms128M -Xmn8M"
+export JAVA_OPTS="-Xmx128M -Xms128M -Xmn8M"
 
 export SRTM_PATH=/srtm
 export SEGMENTSPATH=/segments4
