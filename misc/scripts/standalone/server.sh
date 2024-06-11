@@ -1,13 +1,13 @@
 #!/bin/sh
 
-export JAVA_OPTS="-Xmx128M -Xms128M -Xmn8M"
+export JAVA_OPTS=
 
 export SRTM_PATH=/srtm
 export SEGMENTSPATH=/segments4
 export PROFILESPATH=/profiles2
 export CUSTOMPROFILESPATH=/customprofiles
 
-if [ -n "${OSM_PBF_FILE}" ]; then
+if [ -n ${OSM_PBF_FILE} ]; then
   /bin/process_osm_pbf.sh
 fi
 
