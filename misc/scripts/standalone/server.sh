@@ -1,7 +1,6 @@
 #!/bin/sh
 
 export JAVA_OPTS=
-
 export SRTM_PATH=/srtm
 export SEGMENTSPATH=/segments4
 export PROFILESPATH=/profiles2
